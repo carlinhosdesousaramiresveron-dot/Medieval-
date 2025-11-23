@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Medieval Adventure</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Legends</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="menu">
-    <h1>Medieval Adventure</h1>
-    <button id="startBtn">Start Game</button>
-</div>
 
-<canvas id="gameCanvas"></canvas>
+    <!-- MENU INICIAL -->
+    <div id="menu">
+        <img src="assets/menu.png" id="menu-bg">
+        <button id="playBtn">Jogar</button>
+    </div>
 
-<div id="mobileControls">
-    <button id="leftBtn">◀</button>
-    <button id="rightBtn">▶</button>
-    <button id="jumpBtn">⤒</button>
-    <button id="attackBtn">⚔</button>
-</div>
+    <!-- CANVAS DO JOGO -->
+    <canvas id="game"></canvas>
 
-<audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
+    <!-- CONTROLES PARA CELULAR -->
+    <div id="mobile-controls">
+        <button id="btn-left">◀</button>
+        <button id="btn-right">▶</button>
+        <button id="btn-attack">⚔</button>
+    </div>
 
-<script src="game.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
